@@ -1,3 +1,5 @@
+![Bakcgorund](image.png)
+
 # GoLang Learning Journey 📘
 
 Welcome to my Go language learning repository! 🌟
