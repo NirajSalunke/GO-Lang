@@ -22,6 +22,16 @@ Each folder corresponds to a lesson from the playlist and contains:
 - `07pointer`: Introduction to pointers in Go.
 - `08array`: Arrays and their usage.
 - `09slices`: Working with slices.
+- `10Maps`: Introduction to maps in Go.
+- `11Struct`: Working with structs in Go.
+- `12ifElse`: Control flow with if-else statements.
+- `13Switch`: Using switch statements.
+- `14Loops`: Looping constructs in Go.
+- `15Functions`: Defining and using functions.
+- `16Methods`: Methods in Go, associated with structs.
+- `17defer`: Using `defer` for function execution.
+- `18File`: File handling in Go.
+- `19webReq`: Making web requests in Go.
 
 ## Goals 🎯
 
@@ -48,4 +58,4 @@ To try out the code in each folder:
 
 ---
 
-Happy coding! 🚀
+Happy coding Goofers ! 🚀
