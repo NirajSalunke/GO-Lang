@@ -1,4 +1,4 @@
-![readmeBackground](image.png)
+![readmeBackground](image.jpg)
 
 # GoLang Learning Journey 📘
 
