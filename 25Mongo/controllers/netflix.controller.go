@@ -8,6 +8,7 @@ import (
 	"net/http"
 
 	"github.com/NirajSalunke/modules/models"
+	"github.com/gorilla/mux"
 	"go.mongodb.org/mongo-driver/bson"
 	"go.mongodb.org/mongo-driver/bson/primitive"
 	"go.mongodb.org/mongo-driver/mongo"
@@ -118,4 +119,43 @@ func GetAllMovies(w http.ResponseWriter, r *http.Request) {
 	allMovies := getAll()
 	json.NewEncoder(w).Encode(allMovies)
 
+}
+func CreateMovie(w http.ResponseWriter, r *http.Request) {
+	w.Header().Set("Content-Type", "application/x-www-form-urlencode")
+	w.Header().Set("Allow-Control-Allow-Methods", "POST")
+
+	var newMoive models.Netflix
+	err := json.NewDecoder(r.Body).Decode(&newMoive)
+	if err != nil {
+		log.Fatal(err)
+	}
+	insertOneMovie(newMoive)
+	json.NewEncoder(w).Encode(newMoive)
+}
+
+func MarkWatched(w http.ResponseWriter, r *http.Request) {
+	w.Header().Set("Content-Type", "application/x-www-form-urlencode")
+	w.Header().Set("Allow-Control-Allow-Methods", "PUT")
+
+	params := mux.Vars(r)
+	updateMovie(params["id"])
+	// fmt.Println("Movie Updated successfully")
+	json.NewEncoder(w).Encode("Movie Updaeted succesfully")
+}
+
+func DeleteOne(w http.ResponseWriter, r *http.Request) {
+	w.Header().Set("Content-Type", "application/x-www-form-urlencode")
+	w.Header().Set("Allow-Control-Allow-Methods", "DELETE")
+
+	params := mux.Vars(r)
+	deleteMovie(params["id"])
+	json.NewEncoder(w).Encode("Movie Deleted succesfully")
+
+}
+
+func DeleteAll(w http.ResponseWriter, r *http.Request) {
+	w.Header().Set("Content-Type", "application/x-www-form-urlencode")
+	w.Header().Set("Allow-Control-Allow-Methods", "DELETE")
+	count := deleteAll()
+	json.NewEncoder(w).Encode(count)
 }
