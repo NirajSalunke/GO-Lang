@@ -34,6 +34,15 @@ Each folder corresponds to a lesson from the playlist and contains:
 - `17defer`: Using `defer` for function execution.
 - `18File`: File handling in Go.
 - `19webReq`: Making web requests in Go.
+- `20URL`: Working with URLs in Go.
+- `21reqForm`: Handling form data in Go requests.
+- `22json`: Parsing and using JSON in Go.
+- `23MOD`: Understanding and managing Go modules.
+- `24buildAPI`: Building APIs in Go.
+- `25Mongo`: Working with MongoDB in Go.
+- `26Goroutines`: Introduction to Goroutines for concurrency.
+- `27mutexandWait`: Using mutex and wait groups in Go.
+- `28ChannelAndDeadlock`: Exploring channels and deadlocks.
 
 ## Goals 🎯
 
@@ -59,5 +68,3 @@ To try out the code in each folder:
    ```
 
 ---
-
-Happy coding Goofers ! 🚀
