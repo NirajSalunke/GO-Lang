@@ -40,7 +40,7 @@ Each folder corresponds to a lesson from the playlist and contains:
 - `23MOD`: Understanding and managing Go modules.
 - `24buildAPI`: Building APIs in Go.
 - `25Mongo`: Working with MongoDB in Go.
-- `26Goroutines`: Introduction to Goroutines for concurrency.
+- `26Goroutines`: Introduction to Goroutines for concurrency and parallelism.
 - `27mutexandWait`: Using mutex and wait groups in Go.
 - `28ChannelAndDeadlock`: Exploring channels and deadlocks.
 
