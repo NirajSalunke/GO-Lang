@@ -6,7 +6,7 @@ import (
 )
 
 func main() {
-	fmt.Println("Race Condtion")
+	fmt.Println("Race Condtion and go routines")
 	wg := &sync.WaitGroup{}
 	mut := &sync.RWMutex{}
 	// iif Immediately Involed Functions
